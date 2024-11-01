@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Alexandre Gervais">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="../assets/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link href="../scss/custom_bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../css/styles-app.css">
+  <title>Artechouse - App</title>
+</head>
+
+<body>
+  <!--Header-->
+  <header>
+    <nav class="navbar navbar-dark">
+      <div class="container">
+        <!-- Hamburger button -->
+        <button class="navbar-toggler toggler-style col-2 text-center" data-bs-toggle="collapse"
+          data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false"
+          aria-label="Affichage/masquage de la navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Profile-->
+        <div class="col-2 text-center">
+          <img class="nav-profile" src="../assets/profileIcon.png" alt="icone profile">
+        </div>
+        <!--Hamburger items-->
+        <div id="mainNav" class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Programmation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Oeuvres</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Présentation des artistes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Autres</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="orange-line"></div>
+  <main>
+    <!--Recherche et filtres-->
+    <section class="container p-3">
+      <div class="row">
+        <div class="col-12">
+          <div class="input-group">
+            <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
+            <input type="text" class="form-control" placeholder="Rechercher une oeuvre, un artiste...">
+          </div>
+        </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="swiper swiper-filters">
+          <div class="swipper-wrapper">
+            <div class="swiper-slide">
+              <button class="filtre-bouton">Toutes</button>
+            </div>
+            <div class="swiper-slide">
+              <button class="filtre-bouton">Installations interactives</button>
+            </div>
+            <div class="swiper-slide">
+              <button class="filtre-bouton">Concerts</button>
+            </div>
+            <div class="swiper-slide">
+              <button class="filtre-bouton">Performances</button>
+            </div>
+            <div class="swiper-slide">
+              <button class="filtre-bouton">AR / VR</button>
+            </div>
+            <div class="swiper-slide">
+              <button class="filtre-bouton">Projections / Immersion</button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!--Carousel de cartes-->
+    <section class="container-fluid mb-3" id="carouselCards">
+      <div class="row">
+        <div class="col-12">
+          <h2>En vedette</h2>
+        </div>
+      </div>
+      <div class="swiper swiper-featured-artworks">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="artwork.html" class="card cardCarouselStyle p-1 cardContainer">
+              <img src="../assets/artworks/Universarium.jpg" alt="universarium" class="card-img-top carouselImg">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col">
+                    <h3 class="card-title">Universarium</h3>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col">
+                    <p class="card-text carouselCardText">Par Stefan Harnisch</p>
+                  </div>
+                </div>
+                <div class="row cardCarouselTime">
+                  <div class="col-6">
+                    <span><i class="bi bi-calendar"></i> 13 Mars 2024</span>
+                  </div>
+                  <div class="col-4 offset-2">
+                    <span><i class="bi bi-clock"></i> 18h</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="../assets/artists/stefan-harnisch.png" alt="Stefan Harnisch" class="carouselArtist">
+                  </div>
+                  <div class="col-8 cardCarouselInfo">
+                    <span>Plus d'info<i class="bi-chevron-right"></i></span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="artwork.html" class="card cardCarouselStyle mb-3 p-1 cardContainer">
+              <img src="../assets/artworks/Code Poems.png" alt="code poems" class="card-img-top carouselImg">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col">
+                    <h3 class="card-title">Code Poems</h3>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col">
+                    <p class="card-text carouselCardText">Par ARTECHOUSE</p>
+                  </div>
+                </div>
+                <div class="row cardCarouselTime">
+                  <div class="col-6">
+                    <span><i class="bi bi-calendar"></i> 30 Mars 2024</span>
+                  </div>
+                  <div class="col-4 offset-2">
+                    <span><i class="bi bi-clock"></i> 13h</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="../assets/artists/artechouse.png" alt="artechouse logo" class="carouselArtist">
+                  </div>
+                  <div class="col-8 cardCarouselInfo">
+                    <span>Plus d'info<i class="bi-chevron-right"></i></span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="artwork.html" class="card cardCarouselStyle mb-3 p-1 cardContainer">
+              <img src="../assets/artworks/copacabana.jpg" alt="copacabana" class="card-img-top carouselImg">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col">
+                    <h3 class="card-title">Copacabana</h3>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col">
+                    <p class="card-text carouselCardText">Par Bill Vorn</p>
+                  </div>
+                </div>
+                <div class="row cardCarouselTime">
+                  <div class="col-6">
+                    <span><i class="bi bi-calendar"></i> 26 Mars 2024</span>
+                  </div>
+                  <div class="col-4 offset-2">
+                    <span><i class="bi bi-clock"></i> 10h</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="../assets/artists/bill_vorn.jpg" alt="Bill Vorn" class="carouselArtist">
+                  </div>
+                  <div class="col-8 cardCarouselInfo">
+                    <span>Plus d'info<i class="bi-chevron-right"></i></span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="artwork.html" class="card cardCarouselStyle p-1 cardContainer">
+              <img src="../assets/artworks/Universarium.jpg" alt="universarium" class="card-img-top carouselImg">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col">
+                    <h3 class="card-title">Universarium</h3>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col">
+                    <p class="card-text carouselCardText">Par Stefan Harnisch</p>
+                  </div>
+                </div>
+                <div class="row cardCarouselTime">
+                  <div class="col-6">
+                    <span><i class="bi bi-calendar"></i> 13 Mars 2024</span>
+                  </div>
+                  <div class="col-4 offset-2">
+                    <span><i class="bi bi-clock"></i> 18h</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="../assets/artists/stefan-harnisch.png" alt="Stefan Harnisch" class="carouselArtist">
+                  </div>
+                  <div class="col-8 cardCarouselInfo">
+                    <span>Plus d'info<i class="bi-chevron-right"></i></span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="artwork.html" class="card cardCarouselStyle mb-3 p-1 cardContainer">
+              <img src="../assets/artworks/Code Poems.png" alt="code poems" class="card-img-top carouselImg">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col">
+                    <h3 class="card-title">Code Poems</h3>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col">
+                    <p class="card-text carouselCardText">Par ARTECHOUSE</p>
+                  </div>
+                </div>
+                <div class="row cardCarouselTime">
+                  <div class="col-6">
+                    <span><i class="bi bi-calendar"></i> 30 Mars 2024</span>
+                  </div>
+                  <div class="col-4 offset-2">
+                    <span><i class="bi bi-clock"></i> 13h</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="../assets/artists/artechouse.png" alt="artechouse logo" class="carouselArtist">
+                  </div>
+                  <div class="col-8 cardCarouselInfo">
+                    <span>Plus d'info<i class="bi-chevron-right"></i></span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="artwork.html" class="card cardCarouselStyle mb-3 p-1 cardContainer">
+              <img src="../assets/artworks/copacabana.jpg" alt="copacabana" class="card-img-top carouselImg">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col">
+                    <h3 class="card-title">Copacabana</h3>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col">
+                    <p class="card-text carouselCardText">Par Bill Vorn</p>
+                  </div>
+                </div>
+                <div class="row cardCarouselTime">
+                  <div class="col-6">
+                    <span><i class="bi bi-calendar"></i> 26 Mars 2024</span>
+                  </div>
+                  <div class="col-4 offset-2">
+                    <span><i class="bi bi-clock"></i> 10h</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="../assets/artists/bill_vorn.jpg" alt="Bill Vorn" class="carouselArtist">
+                  </div>
+                  <div class="col-8 cardCarouselInfo">
+                    <span>Plus d'info<i class="bi-chevron-right"></i></span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Cartes-->
+    <section class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Autres œuvres et performances</h2>
+        </div>
+        <div class="col-12">
+          <a href="artwork.html" class="card text-decoration-none mb-3 p-1 cardContainer">
+            <img src="../assets/artworks/world_of_ai-magination.jpg" alt="world of ai-magination"
+              class="card-img-top showcaseImg">
+            <div class="card-body">
+              <div class="row justify-content-center">
+                <div class="col showcaseTitle">
+                  <h3 class="card-title">World of ai-magination</h3>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col">
+                  <p class="card-text showcaseCardText">Par ARTECHOUSE</p>
+                </div>
+              </div>
+              <div class="row cardShowcaseTime">
+                <div class="col-6">
+                  <span><i class="bi bi-calendar"></i> 28 Mars 2024</span>
+                </div>
+                <div class="col-4 offset-2">
+                  <span><i class="bi bi-clock"></i> 8h</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col-4">
+                  <img src="../assets/artists/artechouse.png" alt="artechouse logo" class="showcaseArtist">
+                </div>
+                <div class="col-8 cardShowcaseInfo">
+                  <span>Plus d'info<i class="bi-chevron-right"></i></span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12">
+          <a href="artwork.html" class="card text-decoration-none mb-3 p-1 cardContainer">
+            <img src="../assets/artworks/all_heat_and_no_light.jpg" alt="all heat and no light"
+              class="card-img-top showcaseImg">
+            <div class="card-body">
+              <div class="row justify-content-center">
+                <div class="col showcaseTitle">
+                  <h3 class="card-title">All heat and no light</h3>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col">
+                  <p class="card-text showcaseCardText">Thomas Mader</p>
+                </div>
+              </div>
+              <div class="row cardShowcaseTime">
+                <div class="col-6">
+                  <span><i class="bi bi-calendar"></i> 7 Avril 2024</span>
+                </div>
+                <div class="col-4 offset-2">
+                  <span><i class="bi bi-clock"></i> 20h</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col-4">
+                  <img src="../assets/artists/thomas_mader.jpg" alt="thomas mader" class="showcaseArtist">
+                </div>
+                <div class="col-8 cardShowcaseInfo">
+                  <span>Plus d'info<i class="bi-chevron-right"></i></span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12">
+          <a href="artwork.html" class="card text-decoration-none mb-3 p-1 cardContainer">
+            <img src="../assets/artworks/wave.jpg" alt="wave" class="card-img-top showcaseImg">
+            <div class="card-body">
+              <div class="row justify-content-center">
+                <div class="col showcaseTitle">
+                  <h3 class="card-title">Wave</h3>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col">
+                  <p class="card-text showcaseCardText">Par Squidsoup</p>
+                </div>
+              </div>
+              <div class="row cardShowcaseTime">
+                <div class="col-6">
+                  <span><i class="bi bi-calendar"></i> 1 Avril 2024</span>
+                </div>
+                <div class="col-4 offset-2">
+                  <span><i class="bi bi-clock"></i> 12h</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col-4">
+                  <img src="../assets/artists/squipsoup_logo.jpg" alt="squidsoup logo" class="showcaseArtist">
+                </div>
+                <div class="col-8 cardShowcaseInfo">
+                  <span>Plus d'info<i class="bi-chevron-right"></i></span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--Footer-->
+  <footer class="p-3">
+    <div class="container">
+      <div class="row justify-content-center justify-content-sm-between">
+        <div class="col-sm-8 col-12 text-center">
+          <p class="p-3">Projet fictif réalisé dans le cadre du cours Optimisation Web 582-424MO. UI de la landing page
+            créé par Victor Gileau. UI de l'app créé par Alexandre Gervais.</p>
+        </div>
+        <div class="col-sm-4 col-12 text-center">
+          <img class="logo-tim p-3" src="../assets/TIMLogo.png" alt="Logo TIM">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/lp-script.js"></script>
+</body>
+
+</html>

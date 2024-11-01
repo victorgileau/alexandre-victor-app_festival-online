@@ -1,0 +1,341 @@
+/*--------------------------------------------------------- 
+# Styles Généraux 
+---------------------------------------------------------*/
+:root {
+    --alpha: rgba(00, 00, 00, 00)
+}
+
+@font-face {
+    font-family: 'Heavitas';
+    src: url(../assets/fonts/Heavitas.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'LouisGeorgeCafe_normal';
+    src: url(../assets/fonts/Louis\ George\ Cafe.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'LouisGeorgeCafe_bold';
+    src: url(../assets/fonts/Louis\ George\ Cafe\ Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'LouisGeorgeCafe_light';
+    src: url(../assets/fonts/Louis\ George\ Cafe\ Light.ttf) format('truetype');
+}
+
+body {
+    overflow-x: hidden;
+    min-width: 100%;
+    background-color: var(--bs-dark);
+}
+
+h1,
+.h1 {
+    font-size: 50px;
+    font-weight: 900;
+    color: var(--bs-white);
+}
+
+h2,
+.h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--bs-white);
+}
+
+h3,
+.h3 {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--bs-white);
+}
+
+h4,
+.h4 {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--bs-white);
+}
+
+h5,
+.h5 {
+    font-size: 8px;
+    font-weight: 600;
+    color: var(--bs-white);
+}
+
+h6,
+.h6 {
+    font-size: 5px;
+    font-weight: 300;
+    color: var(--bs-white);
+}
+
+/*---------------------------------------------------------- 
+# Navbar  
+----------------------------------------------------------*/
+
+.site-title {
+    font-size: 3vw;
+    font-family: Heavitas;
+}
+
+.navbar {
+    background-color: var(--bs-dark);
+    color: var(--bs-white);
+}
+
+.navbar-color {
+    height: 5em;
+    width: 100%;
+    background-image: linear-gradient(to right, var(--alpha), var(--bs-primary), var(--alpha));
+}
+
+.nav-link {
+    font-family: 'LouisGeorgeCafe_bold';
+}
+
+.navbar-toggler {
+    border-width: 0.3vw;
+    border-color: var(--bs-primary);
+}
+
+.navbar-toggler-icon {
+    width: 100%;
+    max-width: 30px;
+    min-width: 20px;
+}
+
+.nav-logo {
+    width: 7vw;
+}
+
+.nav-profile {
+    width: 100%;
+    -webkit-mask-image: radial-gradient(circle, black 50%, var(--alpha) 50%);
+    mask-image: radial-gradient(circle, black 50%, var(--alpha) 50%);
+}
+
+.orange-line {
+    background-image: linear-gradient(to right, var(--bs-dark), var(--bs-primary), var(--bs-dark));
+    height: 1vw;
+}
+
+/*---------------------------------------------------------- 
+# Recherche et filtres
+----------------------------------------------------------*/
+
+main,
+.main {
+    background-color: var(--bs-dark);
+}
+
+.swiper-filters {
+    height: 100%;
+}
+
+.swiper-slide {
+    width: auto;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    font-family: 'LouisGeorgeCafe_normal';
+}
+
+.filtre-bouton {
+    padding: 0.8vw;
+    border-width: 1vw;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--bs-primary);
+    white-space: nowrap;
+    object-fit: cover;
+    width: auto;
+    height: 100%;
+}
+
+/*---------------------------------------------------------- 
+# Cards
+----------------------------------------------------------*/
+
+.cardCarouselStyle {
+    text-decoration: none;
+    min-width: 200px;
+    object-fit: cover;
+    max-width: 95vw;
+    height: 80vh;
+    border-width: 1vw;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--bs-primary);
+    overflow: scroll;
+}
+
+.card {
+    font-family: 'LouisGeorgeCafe_normal';
+}
+
+.card-title {
+    font-family: 'Heavitas';
+}
+
+.carouselImg {
+    height: 20vh;
+    object-fit: cover;
+}
+
+.carouselCardText {
+    font-size: 12px;
+}
+
+.carouselArtist {
+    width: 10vw;
+    -webkit-mask-image: radial-gradient(circle, black 50%, var(--alpha) 50%);
+    mask-image: radial-gradient(circle, black 50%, var(--alpha) 50%);
+}
+
+#carouselCards {
+    overflow: hidden;
+    min-width: 576px;
+}
+
+.cardCarouselInfo {
+    font-size: 77%;
+    text-align: end;
+}
+
+.cardCarouselTime {
+    font-size: 67%;
+}
+
+.cardContainer {
+    border-width: 1vw;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--bs-primary);
+}
+
+.cardContainer:hover {
+    background-color: var(--bs-info);
+}
+
+.carouselImg {
+    height: 20vh;
+    object-fit: cover;
+}
+
+.showcaseCardText {
+    font-size: 14px;
+}
+
+.cardShowcaseInfo {
+    font-size: 80%;
+    text-align: end;
+}
+
+.cardShowcaseTime {
+    font-size: 67%;
+}
+
+.showcaseArtist {
+    width: 50%;
+    -webkit-mask-image: radial-gradient(circle, black 50%, var(--alpha) 50%);
+    mask-image: radial-gradient(circle, black 50%, var(--alpha) 50%);
+}
+
+.showcaseTitle {
+    text-align: center;
+}
+
+.swiper-featured-artworks {
+    width: 100%;
+    font-family: 'LouisGeorgeCafe_normal';
+}
+
+/*---------------------------------------------------------- 
+# Footer
+----------------------------------------------------------*/
+
+footer,
+.footer {
+    background-color: var(--bs-secondary);
+    color: var(--bs-white);
+}
+
+.logo-tim {
+    width: 60%;
+    vertical-align: middle;
+}
+
+/*---------------------------------------------------------- 
+# artwork.html
+----------------------------------------------------------*/
+
+.artworkNavbar {
+    background-color: var(--alpha);
+}
+
+.bi-chevron-left {
+    width: 100%;
+    font-size: 3vw;
+    color: var(--bs-dark);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.bi-heart-fill {
+    width: 100%;
+    font-size: 3vw;
+    color: var(--bs-danger);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.bi-heart {
+    width: 100%;
+    font-size: 3vw;
+    color: var(--bs-secondary);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.artworkMenuIcon {
+    border-radius: 45%;
+    position: relative;
+    background-color: var(--bs-white);
+    aspect-ratio: 1/1;
+    text-align: center;
+}
+
+.artworkArt {
+    height: 33vh;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.artworkMoreInfo {
+    background-color: var(--bs-dark);
+}
+
+.artworkPlaceTime {
+    font-size: 80%;
+    color: var(--bs-info)
+}
+
+.artworkSectionTitle {
+    background-color: var(--bs-secondary);
+}
+
+.blackText {
+    color: var(--bs-dark);
+}

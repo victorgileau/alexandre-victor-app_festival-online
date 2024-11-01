@@ -1,0 +1,58 @@
+/*--------------------------------------------------------- 
+# Styles Généraux 
+---------------------------------------------------------*/
+:root {
+    --noir: #000000;
+    --bleufoncer: #14213D;
+    --orangejaune: #FCA311;
+    --grispale: #E5E5E5;
+    --blanc: #FFFFFF; 
+}
+
+@font-face {
+    font-family: 'Heavitas';
+    src: url(../assets/fonts/Heavitas.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'LouisGeorgeCafe_normal';
+    src: url(../assets/fonts/louis_george_cafe/Louis\ George\ Cafe.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'LouisGeorgeCafe_bold';
+    src: url(../assets/fonts/louis_george_cafe/Louis\ George\ Cafe\ Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'LouisGeorgeCafe_light';
+    src: url(../assets/fonts/louis_george_cafe/Louis\ George\ Cafe\ Light.ttf) format('truetype');
+}
+
+h1, .h1{ 
+    font-size: 50px; font-weight: 900; color: var(--blanc);
+}
+
+h2, .h2{
+    font-size: 36px; font-weight: 700; color: var(--blanc);
+}
+
+h3, .h3{ 
+    font-size: 18px; font-weight: 300; color: var(--blanc);
+}
+
+h4, .h4{
+    font-size: 10px; font-weight: 600; color: var(--blanc);
+}
+
+h5, .h5{ 
+    font-size: 8px; font-weight: 600; color: var(--blanc);
+}
+
+h6, .h6{
+    font-size: 5px; font-weight: 300; color: var(--blanc);
+}
+  
+/*---------------------------------------------------------- 
+# Section Hero  
+----------------------------------------------------------*/ 
